@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<context:component-scan base-package="food"/>
+
+<!-- 	<bean id="fruit" class="food.Fruit"> -->
+<!-- 		<property name="name" value="#{'Granny Smith' + ' APPLE'}"/> -->
+<!-- 	<property name="name" value="#{dataSource.getAppleType() + ' APPLE'}"/> -->
+<!-- 		<property name="name" value="#{T(food.DataSource).getAppleTypeStatic() + ' APPLE'}"/> -->
+<!-- 		<property name="nutritionalRating" value="#{T(java.lang.Math).random() * 10}"/> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="dataSource" class="food.DataSource"/> -->
+
+</beans>
