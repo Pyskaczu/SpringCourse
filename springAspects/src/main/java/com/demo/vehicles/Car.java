@@ -2,15 +2,24 @@ package com.demo.vehicles;
 
 public class Car {
 
-	public void drive() {
+	public String drive(int speed) {
 		
-		//meeting tracing cincern
+		//meeting tracing concern
 		//System.out.println("Saving to log (from Car class): Car is driving");
 		
 		//actual business logic for driving 
-		System.out.println("Accelerating and moving");
-	}
+		System.out.println("Driving at " + speed);
+		
+		boolean canMove = true;
+		//boolean canMove = false;
+		
+		if(canMove) {
+			return "I can move";
+		} else {
+			throw new RuntimeException("NEED PETROL");
+		}
 	
+	}
 	
 	public void stop() {
 		System.out.println("Braking to a stop");
