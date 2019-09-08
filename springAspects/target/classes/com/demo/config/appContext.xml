@@ -9,17 +9,17 @@
 
 <!-- 	<context:annotation-config></context:annotation-config> -->
 	
-<!-- 	<bean id="car" class="com.demo.vehicles.Car"></bean> -->
+<!-- 	<bean id="car" class="com.demo.vehicles.CarAdvice"></bean> -->
 	
 <!-- 	<aop:aspectj-autoproxy/> -->
 	
 <!-- 	<context:component-scan base-package="com.demo.aop"></context:component-scan> -->
-<!-- 	<bean id="log" class="com.demo.aop.Log"></bean> -->
+<!-- 	<bean id="log" class="com.demo.aop.LogAdvice"></bean> -->
 
 <!-- 	<aop:config> -->
-<!-- 	<aop:pointcut expression="execution(void com.demo.vehicles.Car.drive())" id="driveCar"/> -->
+<!-- 	<aop:pointcut expression="execution(void com.demo.vehicles.CarAdvice.drive())" id="driveCar"/> -->
 <!-- 		<aop:aspect id="loggerAspect" ref="log"> -->
-<!-- 	<aop:before method="vehicleAboutToMove" pointcut="execution(void com.demo.vehicles.Car.drive())"/> -->
+<!-- 	<aop:before method="vehicleAboutToMove" pointcut="execution(void com.demo.vehicles.CarAdvice.drive())"/> -->
 <!-- 	<aop:before method="vehicleAboutToMove" pointcut-ref="driveCar"/> -->
 <!-- 		</aop:aspect> -->
 <!-- 	</aop:config> -->
