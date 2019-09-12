@@ -1,8 +1,15 @@
+STS 4 configuration:
+Maven configuration:
+1. Open POM and in Overview tab select War from dropdown
+2. RMB on the project and Run As Maven. Stop right after.
+3. Open Run Configurations and in goals type in "clean compile package" 
+
+Tomcat configuration for STS4:
 1. In Eclipse install pivotal TC server plugin
 2. Download Apache Tomcat: https://tomcat.apache.org/download-90.cgi
 3. Window->Preference->Server->Runtime Environments-> Add
 4. Select target Tomcat version and provide installation location.
 5. Open Server view: Windows->Show view->Others->Servers
-6. Add tomcat
+6. Add Tomcat
 7. In Servers View RMB on Tomcat->Open
 8. In Modules tab add location to Target. You can also set context path (springMVC)
